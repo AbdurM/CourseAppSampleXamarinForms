@@ -1,0 +1,15 @@
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/CourseAppSampleXamarinForms.deps.json
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/CourseAppSampleXamarinForms.dll
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/ref/CourseAppSampleXamarinForms.dll
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/CourseAppSampleXamarinForms.pdb
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.csprojAssemblyReference.cache
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/Views/CourseDetailView.xaml.g.cs
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.csproj.CoreCompileInputs.cache
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.AssemblyInfoInputs.cache
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.AssemblyInfo.cs
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.dll
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/ref/CourseAppSampleXamarinForms.dll
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.pdb
