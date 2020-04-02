@@ -1,223 +1,102 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local ="clr-namespace:CourseAppSampleXamarinForms"
-             x:Class="CourseAppSampleXamarinForms.Views.CourseDetailView">
-
-    <ContentPage.BindingContext >
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:CourseAppSampleXamarinForms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CourseAppSampleXamarinForms.Views.CourseDetailView">
+    <ContentPage.BindingContext>
         <local:ViewModels.CourseDetailViewModel />
-    </ContentPage.BindingContext >
-
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Color x:Key="TopSectionColor">#F5F4EF</Color>
+        <Color x:Key="CustomYellow">#FFD073</Color>
+        <Color x:Key="CustomDarkGrey">#61688B</Color>
+        <Color x:Key="CustomLightGrey">#A1A6BE</Color>
+        <Color x:Key="CustomSuperLightGrey">#E4E7F4</Color>
+        <Color x:Key="CustomPink">#ffedee</Color>
+        <Color x:Key="CustomBlue">#6e8afa</Color>
+        <Color x:Key="CustomBlueBorder">#a9b9fc</Color>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid BackgroundColor="#F5F4EF">
+        <Grid BackgroundColor="{StaticResource TopSectionColor}">
             <Grid.RowDefinitions>
-                <RowDefinition Height="350"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="350" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-
             <!--Top Section-->
             <Grid RowSpacing="5" Margin="20,70,0,0" Grid.Row="0">
-
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-
                 <!--BackgroundImage-->
-                <Image Source="DesignCourseImage"
-                           HorizontalOptions="End"
-                           Aspect="AspectFit"
-                           Margin="0,0,-100,0"
-                           Grid.RowSpan="5"/>
-
-                <Label Grid.Row="0"
-                           Padding="5"
-                           Margin="0,20,0,0"
-                           HorizontalOptions="Start"
-                           VerticalOptions="End"
-                           BackgroundColor="#FFD073"
-                           Text="BESTSELLER"
-                           TextColor="Black"
-                           FontSize="Small"
-                           IsVisible="{Binding IsBestSeller}"/>
-
-                <Label Grid.Row="1"
-                       TextColor="Black"
-                       FontSize="Title"
-                       FontAttributes="Bold"
-                       Text="Design Thinking"
-                       Margin="0"/>
-
-                <StackLayout  Grid.Row="2"
-                              Spacing="25"
-                              Orientation="Horizontal">
-
+                <Image Source="DesignCourseImage" HorizontalOptions="End" Aspect="AspectFit" Margin="0,0,-100,0" Grid.RowSpan="5" />
+                <!--BestSeller Label-->
+                <Label Grid.Row="0" Padding="5" Margin="0,20,0,0" HorizontalOptions="Start" VerticalOptions="End" BackgroundColor="{StaticResource CustomYellow}" Text="BESTSELLER" TextColor="Black" FontSize="Small" IsVisible="{Binding IsBestSeller}" />
+                <Label Grid.Row="1" TextColor="Black" FontSize="Title" FontAttributes="Bold" Text="Design Thinking" Margin="0" />
+                <StackLayout Grid.Row="2" Spacing="25" Orientation="Horizontal">
                     <StackLayout.Resources>
                         <Style TargetType="Label">
-                            <Setter Property="HorizontalOptions" Value="Center"/>
-                            <Setter Property="VerticalOptions" Value="Center"/>
-                            <Setter Property="TextColor" Value="#61688B"/>
+                            <Setter Property="HorizontalOptions" Value="Center" />
+                            <Setter Property="VerticalOptions" Value="Center" />
+                            <Setter Property="TextColor" Value="{StaticResource CustomDarkGrey}" />
                         </Style>
-
                         <Style TargetType="Image">
-                            <Setter Property="HorizontalOptions" Value="Start"/>
-                            <Setter Property="VerticalOptions" Value="Center"/>
+                            <Setter Property="HorizontalOptions" Value="Start" />
+                            <Setter Property="VerticalOptions" Value="Center" />
                         </Style>
-
                     </StackLayout.Resources>
-
-
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="followersIcon"/>
-                        <Label Text="18k"/>
+                        <Image Source="followersIcon" />
+                        <Label Text="18k" />
                     </StackLayout>
-
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="starIcon"/>
-                        <Label Text="4.8"/>
+                        <Image Source="starIcon" />
+                        <Label Text="4.8" />
                     </StackLayout>
-
                 </StackLayout>
-
-                <StackLayout Grid.Row="3"
-                                Orientation="Horizontal">
-
-                    <Label Text="$50"
-                              FontSize="Title"
-                              FontAttributes="Bold"
-                              VerticalOptions="Center"/>
-
-                    <Label Text="$70"
-                              TextDecorations="Strikethrough"
-                              FontSize="Medium"
-                              TextColor="#A1A6BE"
-                              VerticalOptions="Center"/>
-
+                <StackLayout Grid.Row="3" Orientation="Horizontal">
+                    <Label Text="$50" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Label Text="$70" TextDecorations="Strikethrough" FontSize="Medium" TextColor="{StaticResource CustomLightGrey}" VerticalOptions="Center" />
                 </StackLayout>
-
-
             </Grid>
-
-            <Frame Grid.Row="1"
-                       CornerRadius="55"
-                       Margin="-10,-60,-10,-50"
-                       BackgroundColor="White"
-                       HasShadow="False"
-                       HeightRequest="80"
-                       HorizontalOptions="Fill"
-                       VerticalOptions="EndAndExpand">
-
-                <Label Text="Course Content"
-                       TextColor="Black"
-                         FontSize="Large"
-                         Margin="0,0,0,10"
-                         FontAttributes="Bold"
-                         VerticalOptions="Center"/>
-
+            <Frame Grid.Row="1" CornerRadius="55" Margin="-10,-60,-10,-50" BackgroundColor="White" HasShadow="False" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
+                <Label Text="Course Content" TextColor="Black" FontSize="Large" Margin="0,0,0,10" FontAttributes="Bold" VerticalOptions="Center" />
             </Frame>
-
             <!-- Course videos List-->
-            <CollectionView Grid.Row="2"
-                        BackgroundColor="White"
-                        ItemsSource="{Binding VideoList}">
-
+            <CollectionView Grid.Row="2" BackgroundColor="White" ItemsSource="{Binding VideoList}">
                 <CollectionView.ItemTemplate>
-
                     <DataTemplate>
-
-                        <Grid
-                     HeightRequest="80"
-                     VerticalOptions="End"
-                     ColumnSpacing= "20"
-                     BackgroundColor="White">
-
-
+                        <Grid HeightRequest="80" VerticalOptions="End" ColumnSpacing="20" BackgroundColor="White">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="3*"/>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="3*" />
+                                <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-
-
-                            <Label Grid.Column="0"
-                                   Text="{Binding VideoNumber}"
-                                   FontSize="Title"
-                                   Margin="20,0,0,0"
-                                    FontAttributes="Bold"
-                                   TextColor="#E4E7F4"
-                                VerticalOptions="CenterAndExpand"
-                   />
-
-                            <StackLayout Grid.Column="1"
-                       HorizontalOptions="Start"
-                       VerticalOptions="Center">
-
-                                <Label Text="{Binding Duration}"
-                            TextColor="#E4E7F4"
-                            FontAttributes="Bold"
-                            HorizontalOptions="Start"/>
-
-                                <Label Text="{Binding Title}"
-                         FontAttributes="Bold"
-                         TextColor="#0D1333"
-                         HorizontalOptions="Start"/>
-
+                            <Label Grid.Column="0" Text="{Binding VideoNumber}" FontSize="Title" Margin="20,0,0,0" FontAttributes="Bold" TextColor="{StaticResource CustomSuperLightGrey}" VerticalOptions="CenterAndExpand" />
+                            <StackLayout Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center">
+                                <Label Text="{Binding Duration}" TextColor="{StaticResource CustomSuperLightGrey}" FontAttributes="Bold" HorizontalOptions="Start" />
+                                <Label Text="{Binding Title}" FontAttributes="Bold" TextColor="#0D1333" HorizontalOptions="Start" />
                             </StackLayout>
-
-                            <Image Grid.Column="2"
-                        Source="playButtonIcon"
-                        HorizontalOptions="Start"
-                        Margin="0,0,0,20"/>
-
+                            <Image Grid.Column="2" Source="playButtonIcon" HorizontalOptions="Start" Margin="0,0,0,20" />
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
-
             </CollectionView>
-
-            <Frame     Grid.Row="3"
-                       CornerRadius="55"
-                       Margin="-10,-60,-10,-50"
-                       BackgroundColor="White"
-                       HasShadow="True"
-                       HeightRequest="100"
-                       HorizontalOptions="Fill"
-                       VerticalOptions="EndAndExpand">
-
+            <Frame Grid.Row="3" CornerRadius="55" Margin="-10,-60,-10,-50" BackgroundColor="White" HasShadow="True" HeightRequest="100" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
                 <Grid ColumnSpacing="15">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="4*" />
                     </Grid.ColumnDefinitions>
-
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50" />
                     </Grid.RowDefinitions>
-
-                    <Button Grid.Column="0"
-                            CornerRadius="25"
-                            ImageSource="shoppingBagIcon"
-                            BackgroundColor="#ffedee"/>
-
-                    <Button Grid.Column="1"
-                            Text ="Buy Now"
-                            TextColor="White"
-                            CornerRadius="25"
-                            BackgroundColor="#6e8afa"
-                            BorderColor="#a9b9fc"/>
-
+                    <Button Grid.Column="0" CornerRadius="25" ImageSource="shoppingBagIcon" BackgroundColor="{StaticResource CustomPink}" />
+                    <Button Grid.Column="1" Text="Buy Now" TextColor="White" CornerRadius="25" BackgroundColor="{StaticResource CustomBlue}" BorderColor="{StaticResource CustomBlueBorder}" />
                 </Grid>
-
             </Frame>
-
-
         </Grid>
-
     </ContentPage.Content>
 </ContentPage>
