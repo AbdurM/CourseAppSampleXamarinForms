@@ -35,6 +35,7 @@
                 <!--BestSeller Label-->
                 <Label Grid.Row="0" Padding="5" Margin="0,20,0,0" HorizontalOptions="Start" VerticalOptions="End" BackgroundColor="{StaticResource CustomYellow}" Text="BESTSELLER" TextColor="Black" FontSize="Small" IsVisible="{Binding IsBestSeller}" />
                 <Label Grid.Row="1" TextColor="Black" FontSize="Title" FontAttributes="Bold" Text="Design Thinking" Margin="0" />
+                <!--Followers and rating section-->
                 <StackLayout Grid.Row="2" Spacing="25" Orientation="Horizontal">
                     <StackLayout.Resources>
                         <Style TargetType="Label">
@@ -56,15 +57,17 @@
                         <Label Text="4.8" />
                     </StackLayout>
                 </StackLayout>
+                <!--Price Section-->
                 <StackLayout Grid.Row="3" Orientation="Horizontal">
                     <Label Text="$50" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" />
                     <Label Text="$70" TextDecorations="Strikethrough" FontSize="Medium" TextColor="{StaticResource CustomLightGrey}" VerticalOptions="Center" />
                 </StackLayout>
             </Grid>
+            <!--curve-->
             <Frame Grid.Row="1" CornerRadius="55" Margin="-10,-60,-10,-50" BackgroundColor="White" HasShadow="False" HeightRequest="80" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
                 <Label Text="Course Content" TextColor="Black" FontSize="Large" Margin="0,0,0,10" FontAttributes="Bold" VerticalOptions="Center" />
             </Frame>
-            <!-- Course videos List-->
+            <!-- Middle Section-->
             <CollectionView Grid.Row="2" BackgroundColor="White" ItemsSource="{Binding VideoList}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -84,6 +87,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <!--Bottom Section-->
             <Frame Grid.Row="3" CornerRadius="55" Margin="-10,-60,-10,-50" BackgroundColor="White" HasShadow="True" HeightRequest="100" HorizontalOptions="Fill" VerticalOptions="EndAndExpand">
                 <Grid ColumnSpacing="15">
                     <Grid.ColumnDefinitions>
