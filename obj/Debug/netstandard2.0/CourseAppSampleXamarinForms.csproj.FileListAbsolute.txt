@@ -2,7 +2,6 @@
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/CourseAppSampleXamarinForms.dll
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/ref/CourseAppSampleXamarinForms.dll
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/bin/Debug/netstandard2.0/CourseAppSampleXamarinForms.pdb
-/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.csprojAssemblyReference.cache
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/Views/CourseDetailView.xaml.g.cs

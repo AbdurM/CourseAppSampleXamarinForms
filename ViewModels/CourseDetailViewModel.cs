@@ -6,13 +6,16 @@ namespace CourseAppSampleXamarinForms.ViewModels
 {
     public class CourseDetailViewModel
     {
+        #region Properties
         public ObservableCollection<Video> VideoList { get; set; }
+        #endregion
 
+        #region Contructors
         public CourseDetailViewModel()
         {
             VideoList = new ObservableCollection<Video>();
 
-            for (int i= 1; i<20; i++)
+            for (int i = 1; i < 20; i++)
             {
                 var video = new Video
                 {
@@ -23,7 +26,8 @@ namespace CourseAppSampleXamarinForms.ViewModels
 
                 VideoList.Add(video);
             }
-            
+
         }
+        #endregion
     }
 }
