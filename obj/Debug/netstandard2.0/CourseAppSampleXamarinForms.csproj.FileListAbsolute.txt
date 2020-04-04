@@ -12,3 +12,4 @@
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.dll
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/ref/CourseAppSampleXamarinForms.dll
 /Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.pdb
+/Users/abdur/Projects/CourseAppSampleXamarinForms/CourseAppSampleXamarinForms/obj/Debug/netstandard2.0/CourseAppSampleXamarinForms.csprojAssemblyReference.cache
